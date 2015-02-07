@@ -19,7 +19,11 @@ class ControleFluxoCondicional {
 	int anoAtual = 2009;
 	double aliquota = 0.20;
 	int anoNascimento = anoAtual - idade;
-	String sexoPorExtenso = sexo == 'M' ? "masculino" : "feminino";
+	String sexoPorExtenso;
+	if (sexo == 'M') 
+		sexoPorExtenso = "masculino";
+	else 
+		sexoPorExtenso = "feminino";
 	double impostoDevido = salario * aliquota;
 	String textNome = "O(a) Senhor(a) " + nome;
 	String textNasc = ", nascido(a) no ano de " + anoNascimento;
