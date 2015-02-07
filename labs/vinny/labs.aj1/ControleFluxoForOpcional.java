@@ -12,6 +12,11 @@ class ControleFluxoForOpcional {
    */
   public static void main(String[] args) {
   	for (int numero=100; numero<= 200; numero++){
+  		imprimaDivisibilidade(numero);
+  	}
+  }
+
+  static void imprimaDivisibilidade(int numero){
   		String mensagem = "";
   		boolean divisivelPor2 = numero % 2 == 0;
   		boolean divisivelPor3 = numero % 3 == 0;
@@ -24,5 +29,4 @@ class ControleFluxoForOpcional {
   			mensagem = numero + " é divisível por 2";
   		System.out.println(mensagem);
   	}
-  }
 }
